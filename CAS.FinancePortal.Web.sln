@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CAS.FinancePortal.Web.Server", "CAS.FinancePortal.Web.Server\CAS.FinancePortal.Web.Server.csproj", "{B8186E4D-45D4-82E2-7C37-A44E0833C783}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8186E4D-45D4-82E2-7C37-A44E0833C783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8186E4D-45D4-82E2-7C37-A44E0833C783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8186E4D-45D4-82E2-7C37-A44E0833C783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8186E4D-45D4-82E2-7C37-A44E0833C783}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3BD862F-4771-4726-A651-F31626CDFDDF}
+	EndGlobalSection
+EndGlobal
