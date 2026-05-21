@@ -1,0 +1,2688 @@
+﻿node.exe : 
+2026-03-12T03:39:24.171Z 
+vite:config config file 
+loaded in 153.01ms
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: (202  
+  6-03-12T03:3...ded in    
+ 153.01ms:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+2026-03-12T03:39:24.176Z 
+vite:env loading env 
+files: [
+  'D:/CoreAdminSys/cas.admi
+nportal.web.client/.env',
+  'D:/CoreAdminSys/cas.admi
+nportal.web.client/.env.loc
+al',
+  'D:/CoreAdminSys/cas.admi
+nportal.web.client/.env.pro
+duction',
+  'D:/CoreAdminSys/cas.admi
+nportal.web.client/.env.pro
+duction.local'
+]
+2026-03-12T03:39:24.177Z 
+vite:env env files loaded 
+in 0.93ms
+2026-03-12T03:39:24.178Z 
+vite:env using resolved 
+env: {}
+2026-03-12T03:39:24.270Z 
+vite:config using resolved 
+config: {
+  plugins: [
+    'vite:build-metadata',
+    
+'vite:watch-package-data',
+    'alias',
+    'vite:react-babel',
+    'vite:react-refresh',
+    'vite-plugin-pwa',
+    'vite:modulepreload-pol
+yfill',
+    'vite:resolve',
+    
+'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    'vite:wasm-fallback',
+    'vite:define',
+    'vite:css-post',
+    'vite:build-html',
+    'vite:worker-import-met
+a-url',
+    'vite:asset-import-meta
+-url',
+    'vite:force-systemjs-wr
+ap-complete',
+    'commonjs',
+    'vite:data-uri',
+    'vite:rollup-options-pl
+ugins',
+    
+'vite:dynamic-import-vars',
+    'vite:import-glob',
+    'vite-plugin-pwa:info',
+    
+'vite-plugin-pwa:build',
+    'vite-plugin-pwa:pwa-as
+sets',
+    'vite:build-import-anal
+ysis',
+    
+'vite:esbuild-transpile',
+    'vite:terser',
+    'vite:manifest',
+    'vite:ssr-manifest',
+    'vite:reporter',
+    'vite:load-fallback'
+  ],
+  base: 
+'/cas/adminportal/',
+  resolve: {
+    externalConditions: [ 
+'node' ],
+    extensions: [
+      '.mjs',  '.js',
+      '.mts',  '.ts',
+      '.jsx',  '.tsx',
+      '.json'
+    ],
+    dedupe: [ 'react', 
+'react-dom' ],
+    noExternal: [],
+    external: [],
+    preserveSymlinks: 
+false,
+    alias: [
+      {
+        find: '@',
+        replacement: 'D:\\C
+oreAdminSys\\cas.adminporta
+l.web.client\\src'
+      },
+      {
+        find: '@app',
+        replacement: 'D:\\C
+oreAdminSys\\cas.adminporta
+l.web.client\\src\\app'
+      },
+      {
+        find: '@features',
+        replacement: 'D:\\C
+oreAdminSys\\cas.adminporta
+l.web.client\\src\\features
+'
+      },
+      {
+        find: '@shared',
+        replacement: 'D:\\C
+oreAdminSys\\cas.adminporta
+l.web.client\\src\\shared'
+      },
+      {
+        find: '@assets',
+        replacement: 'D:\\C
+oreAdminSys\\cas.adminporta
+l.web.client\\src\\assets'
+      },
+      {
+        find: 
+/^\/?@vite\/env/,
+        replacement: '/@fs/
+D:/CoreAdminSys/cas.adminpo
+rtal.web.client/node_module
+s/vite/dist/client/env.mjs'
+      },
+      {
+        find: 
+/^\/?@vite\/client/,
+        replacement: '/@fs/
+D:/CoreAdminSys/cas.adminpo
+rtal.web.client/node_module
+s/vite/dist/client/client.m
+js'
+      }
+    ],
+    mainFields: [ 
+'browser', 'module', 
+'jsnext:main', 'jsnext' ],
+    conditions: [ 
+'module', 'browser', 
+'development|production' ],
+    builtins: []
+  },
+  build: {
+    target: [ 'es2020', 
+'edge88', 'firefox78', 
+'chrome87', 'safari14' ],
+    polyfillModulePreload: 
+true,
+    modulePreload: { 
+polyfill: true },
+    outDir: 'dist',
+    assetsDir: 'assets',
+    assetsInlineLimit: 
+4096,
+    sourcemap: false,
+    terserOptions: {},
+    rollupOptions: { 
+onwarn: [Function: onwarn] 
+},
+    commonjsOptions: { 
+include: [ /node_modules/ 
+], extensions: [ '.js', 
+'.cjs' ] },
+    
+dynamicImportVarsOptions: 
+{ warnOnError: true, 
+exclude: [ /node_modules/ 
+] },
+    write: true,
+    emptyOutDir: null,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssrManifest: false,
+    ssrEmitAssets: false,
+    reportCompressedSize: 
+true,
+    chunkSizeWarningLimit: 
+3000,
+    watch: null,
+    cssCodeSplit: true,
+    minify: 'esbuild',
+    ssr: false,
+    emitAssets: true,
+    createEnvironment: 
+[Function: 
+createEnvironment],
+    cssTarget: [ 'es2020', 
+'edge88', 'firefox78', 
+'chrome87', 'safari14' ],
+    cssMinify: true
+  },
+  esbuild: { jsxDev: 
+false, jsx: 'automatic', 
+jsxImportSource: undefined 
+},
+  optimizeDeps: {
+    include: [
+      'react',
+      'react-dom',
+      
+'react/jsx-dev-runtime',
+      'react/jsx-runtime'
+    ],
+    exclude: [],
+    needsInterop: [],
+    extensions: [],
+    disabled: undefined,
+    holdUntilCrawlEnd: 
+true,
+    force: false,
+    noDiscovery: false,
+    esbuildOptions: { 
+preserveSymlinks: false, 
+jsx: 'automatic' }
+  },
+  ssr: {
+    target: 'node',
+    optimizeDeps: {
+      esbuildOptions: { 
+preserveSymlinks: false },
+      include: [],
+      exclude: [],
+      needsInterop: [],
+      extensions: [],
+      holdUntilCrawlEnd: 
+true,
+      force: false,
+      noDiscovery: true
+    },
+    noExternal: [ 
+'workbox-window' ],
+    external: [],
+    resolve: {
+      conditions: [ 
+'module', 'node', 
+'development|production' ],
+      externalConditions: 
+[ 'node' ]
+    }
+  },
+  environments: {
+    client: {
+      define: undefined,
+      resolve: {
+        
+externalConditions: [ 
+'node' ],
+        extensions: [
+          '.mjs',  '.js',
+          '.mts',  '.ts',
+          '.jsx',  '.tsx',
+          '.json'
+        ],
+        dedupe: [ 'react', 
+'react-dom' ],
+        noExternal: [],
+        external: [],
+        preserveSymlinks: 
+false,
+        alias: [
+          {
+            find: '@',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src'
+          },
+          {
+            find: '@app',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\app'
+          },
+          {
+            find: 
+'@features',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\feat
+ures'
+          },
+          {
+            find: 
+'@shared',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\shar
+ed'
+          },
+          {
+            find: 
+'@assets',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\asse
+ts'
+          },
+          {
+            find: 
+/^\/?@vite\/env/,
+            replacement: '/
+@fs/D:/CoreAdminSys/cas.adm
+inportal.web.client/node_mo
+dules/vite/dist/client/env.
+mjs'
+          },
+          {
+            find: 
+/^\/?@vite\/client/,
+            replacement: '/
+@fs/D:/CoreAdminSys/cas.adm
+inportal.web.client/node_mo
+dules/vite/dist/client/clie
+nt.mjs'
+          }
+        ],
+        mainFields: [ 
+'browser', 'module', 
+'jsnext:main', 'jsnext' ],
+        conditions: [ 
+'module', 'browser', 
+'development|production' ],
+        builtins: []
+      },
+      keepProcessEnv: 
+false,
+      consumer: 'client',
+      optimizeDeps: {
+        include: [
+          'react',
+          'react-dom',
+          
+'react/jsx-dev-runtime',
+          
+'react/jsx-runtime'
+        ],
+        exclude: [],
+        needsInterop: [],
+        extensions: [],
+        disabled: 
+undefined,
+        holdUntilCrawlEnd: 
+true,
+        force: false,
+        noDiscovery: false,
+        esbuildOptions: { 
+preserveSymlinks: false, 
+jsx: 'automatic' }
+      },
+      dev: {
+        warmup: [],
+        sourcemap: { js: 
+true },
+        
+sourcemapIgnoreList: 
+[Function: 
+isInNodeModules$1],
+        
+preTransformRequests: true,
+        createEnvironment: 
+[Function: defaultCreateCli
+entDevEnvironment],
+        recoverable: true,
+        
+moduleRunnerTransform: 
+false
+      },
+      build: {
+        target: [ 
+'es2020', 'edge88', 
+'firefox78', 'chrome87', 
+'safari14' ],
+        
+polyfillModulePreload: 
+true,
+        modulePreload: { 
+polyfill: true },
+        outDir: 'dist',
+        assetsDir: 
+'assets',
+        assetsInlineLimit: 
+4096,
+        sourcemap: false,
+        terserOptions: {},
+        rollupOptions: { 
+onwarn: [Function: onwarn] 
+},
+        commonjsOptions: { 
+include: [ /node_modules/ 
+], extensions: [ '.js', 
+'.cjs' ] },
+        
+dynamicImportVarsOptions: 
+{ warnOnError: true, 
+exclude: [ /node_modules/ 
+] },
+        write: true,
+        emptyOutDir: null,
+        copyPublicDir: 
+true,
+        manifest: false,
+        lib: false,
+        ssrManifest: false,
+        ssrEmitAssets: 
+false,
+        
+reportCompressedSize: true,
+        
+chunkSizeWarningLimit: 
+3000,
+        watch: null,
+        cssCodeSplit: true,
+        minify: 'esbuild',
+        ssr: false,
+        emitAssets: true,
+        createEnvironment: 
+[Function: 
+createEnvironment],
+        cssTarget: [ 
+'es2020', 'edge88', 
+'firefox78', 'chrome87', 
+'safari14' ],
+        cssMinify: true
+      }
+    },
+    ssr: {
+      define: undefined,
+      resolve: {
+        
+externalConditions: [ 
+'node' ],
+        extensions: [
+          '.mjs',  '.js',
+          '.mts',  '.ts',
+          '.jsx',  '.tsx',
+          '.json'
+        ],
+        dedupe: [ 'react', 
+'react-dom' ],
+        noExternal: [ 
+'workbox-window' ],
+        external: [],
+        preserveSymlinks: 
+false,
+        alias: [
+          {
+            find: '@',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src'
+          },
+          {
+            find: '@app',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\app'
+          },
+          {
+            find: 
+'@features',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\feat
+ures'
+          },
+          {
+            find: 
+'@shared',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\shar
+ed'
+          },
+          {
+            find: 
+'@assets',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\asse
+ts'
+          },
+          {
+            find: 
+/^\/?@vite\/env/,
+            replacement: '/
+@fs/D:/CoreAdminSys/cas.adm
+inportal.web.client/node_mo
+dules/vite/dist/client/env.
+mjs'
+          },
+          {
+            find: 
+/^\/?@vite\/client/,
+            replacement: '/
+@fs/D:/CoreAdminSys/cas.adm
+inportal.web.client/node_mo
+dules/vite/dist/client/clie
+nt.mjs'
+          }
+        ],
+        mainFields: [ 
+'module', 'jsnext:main', 
+'jsnext' ],
+        conditions: [ 
+'module', 'node', 
+'development|production' ],
+        builtins: [
+          '_http_agent',   
+      '_http_client',      
+  '_http_common',
+          
+'_http_incoming',      
+'_http_outgoing',      
+'_http_server',
+          
+'_stream_duplex',      
+'_stream_passthrough', 
+'_stream_readable',
+          
+'_stream_transform',   
+'_stream_wrap',        
+'_stream_writable',
+          '_tls_common',   
+      '_tls_wrap',         
+  'assert',
+          'assert/strict', 
+      'async_hooks',       
+  'buffer',
+          'child_process', 
+      'cluster',           
+  'console',
+          'constants',     
+      'crypto',            
+  'dgram',
+          
+'diagnostics_channel', 
+'dns',                 
+'dns/promises',
+          'domain',        
+      'events',            
+  'fs',
+          'fs/promises',   
+      'http',              
+  'http2',
+          'https',         
+      'inspector',         
+  'inspector/promises',
+          'module',        
+      'net',               
+  'os',
+          'path',          
+      'path/posix',        
+  'path/win32',
+          'perf_hooks',    
+      'process',           
+  'punycode',
+          'querystring',   
+      'readline',          
+  'readline/promises',
+          'repl',          
+      'stream',            
+  'stream/consumers',
+          
+'stream/promises',     
+'stream/web',          
+'string_decoder',
+          'sys',           
+      'timers',            
+  'timers/promises',
+          'tls',           
+      'trace_events',      
+  'tty',
+          'url',           
+      'util',              
+  'util/types',
+          'v8',            
+      'vm',                
+  'wasi',
+          
+'worker_threads',      
+'zlib',                
+/^node:/,
+          /^npm:/,         
+      /^bun:/
+        ]
+      },
+      keepProcessEnv: true,
+      consumer: 'server',
+      optimizeDeps: {
+        include: [],
+        exclude: [],
+        needsInterop: [],
+        extensions: [],
+        disabled: 
+undefined,
+        holdUntilCrawlEnd: 
+true,
+        force: false,
+        noDiscovery: true,
+        esbuildOptions: { 
+preserveSymlinks: false }
+      },
+      dev: {
+        warmup: [],
+        sourcemap: { js: 
+true },
+        
+sourcemapIgnoreList: 
+[Function: 
+isInNodeModules$1],
+        
+preTransformRequests: 
+false,
+        createEnvironment: 
+[Function: defaultCreateDev
+Environment],
+        recoverable: false,
+        
+moduleRunnerTransform: true
+      },
+      build: {
+        target: [ 
+'es2020', 'edge88', 
+'firefox78', 'chrome87', 
+'safari14' ],
+        
+polyfillModulePreload: 
+true,
+        modulePreload: { 
+polyfill: true },
+        outDir: 'dist',
+        assetsDir: 
+'assets',
+        assetsInlineLimit: 
+4096,
+        sourcemap: false,
+        terserOptions: {},
+        rollupOptions: { 
+onwarn: [Function: onwarn] 
+},
+        commonjsOptions: { 
+include: [ /node_modules/ 
+], extensions: [ '.js', 
+'.cjs' ] },
+        
+dynamicImportVarsOptions: 
+{ warnOnError: true, 
+exclude: [ /node_modules/ 
+] },
+        write: true,
+        emptyOutDir: null,
+        copyPublicDir: 
+true,
+        manifest: false,
+        lib: false,
+        ssrManifest: false,
+        ssrEmitAssets: 
+false,
+        
+reportCompressedSize: true,
+        
+chunkSizeWarningLimit: 
+3000,
+        watch: null,
+        cssCodeSplit: true,
+        minify: false,
+        ssr: true,
+        emitAssets: true,
+        createEnvironment: 
+[Function: 
+createEnvironment],
+        cssTarget: [ 
+'es2020', 'edge88', 
+'firefox78', 'chrome87', 
+'safari14' ],
+        cssMinify: 
+'esbuild'
+      }
+    }
+  },
+  configFile: 'D:/CoreAdmin
+Sys/cas.adminportal.web.cli
+ent/vite.config.js',
+  configFileDependencies: 
+[ 'D:/CoreAdminSys/cas.admi
+nportal.web.client/vite.con
+fig.js' ],
+  inlineConfig: {
+    root: undefined,
+    base: undefined,
+    mode: undefined,
+    configFile: undefined,
+    configLoader: 
+undefined,
+    logLevel: undefined,
+    clearScreen: undefined,
+    build: {}
+  },
+  root: 'D:/CoreAdminSys/ca
+s.adminportal.web.client',
+  decodedBase: 
+'/cas/adminportal/',
+  rawBase: 
+'/cas/adminportal/',
+  publicDir: 'D:/CoreAdminS
+ys/cas.adminportal.web.clie
+nt/public',
+  cacheDir: 'D:/CoreAdminSy
+s/cas.adminportal.web.clien
+t/node_modules/.vite',
+  command: 'build',
+  mode: 'production',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: true,
+  css: {
+    transformer: 'postcss',
+    
+preprocessorMaxWorkers: 0,
+    devSourcemap: false
+  },
+  json: { namedExports: 
+true, stringify: 'auto' },
+  server: {
+    port: 5173,
+    strictPort: false,
+    host: undefined,
+    allowedHosts: [],
+    https: undefined,
+    open: false,
+    proxy: undefined,
+    cors: {
+      origin: /^https?:\/\/
+(?:(?:[^:]+\.)?localhost|12
+7\.0\.0\.1|\[::1\])(?::\d+)
+?$/
+    },
+    headers: {},
+    warmup: { clientFiles: 
+[], ssrFiles: [] },
+    middlewareMode: false,
+    fs: {
+      strict: true,
+      deny: [ '.env', 
+'.env.*', '*.{crt,pem}', 
+'**/.git/**' ],
+      allow: [ 'D:/CoreAdmi
+nSys/cas.adminportal.web.cl
+ient' ]
+    },
+    preTransformRequests: 
+true,
+    perEnvironmentStartEndD
+uringDev: false,
+    sourcemapIgnoreList: 
+[Function: 
+isInNodeModules$1]
+  },
+  builder: undefined,
+  preview: {
+    port: 4173,
+    strictPort: false,
+    host: undefined,
+    allowedHosts: [],
+    https: undefined,
+    open: false,
+    proxy: undefined,
+    cors: {
+      origin: /^https?:\/\/
+(?:(?:[^:]+\.)?localhost|12
+7\.0\.0\.1|\[::1\])(?::\d+)
+?$/
+    },
+    headers: {}
+  },
+  envDir: 'D:/CoreAdminSys/
+cas.adminportal.web.client'
+,
+  env: {
+    BASE_URL: 
+'/cas/adminportal/',
+    MODE: 'production',
+    DEV: false,
+    PROD: true
+  },
+  assetsInclude: 
+[Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: 
+warnOnce],
+    error: [Function: 
+error],
+    clearScreen: 
+[Function: clearScreen],
+    hasErrorLogged: 
+[Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_D:/CoreAdminSys/c
+as.adminportal.web.client' 
+=> {
+      dir: 'D:/CoreAdminSys
+/cas.adminportal.web.client
+',
+      data: {
+        name: 
+'core-hrsolution-ui',
+        private: true,
+        version: '0.0.0',
+        type: 'module',
+        scripts: {
+          start: 
+'concurrently "npm run 
+start-dev" "npm run 
+start-server"',
+          'start-dev': 
+'vite --host --port 5173',
+          'start-server': 
+'cd socket && npm start',
+          'create:module': 
+'node scripts/generate-modu
+le.js',
+          'delete:module': 
+'node 
+scripts/remove-module.js',
+          build: 'vite 
+build ',
+          lint: 'eslint .',
+          preview: 
+'concurrently "npm run 
+preview-locally" "npm run 
+start-server"',
+          
+'preview-locally': 'vite 
+preview --port 5173'
+        },
+        dependencies: {
+          
+'@auth0/auth0-spa-js': 
+'^2.1.3',
+          '@base-ui-compone
+nts/react': 
+'^1.0.0-beta.4',
+          '@ckeditor/ckedit
+or5-react': '^9.5.0',
+          '@dnd-kit/core': 
+'^6.3.1',
+          
+'@dnd-kit/modifiers': 
+'^9.0.0',
+          
+'@dnd-kit/sortable': 
+'^10.0.0',
+          
+'@dnd-kit/utilities': 
+'^3.2.2',
+          
+'@editorjs/attaches': 
+'^1.3.0',
+          
+'@editorjs/checklist': 
+'^1.6.0',
+          
+'@editorjs/code': '^2.9.3',
+          
+'@editorjs/delimiter': 
+'^1.4.2',
+          
+'@editorjs/editorjs': 
+'^2.30.8',
+          
+'@editorjs/embed': 
+'^2.7.6',
+          
+'@editorjs/header': 
+'^2.8.8',
+          
+'@editorjs/image': 
+'^2.10.3',
+          
+'@editorjs/inline-code': 
+'^1.5.2',
+          
+'@editorjs/link': '^2.6.2',
+          
+'@editorjs/list': '^2.0.8',
+          
+'@editorjs/paragraph': 
+'^2.11.7',
+          
+'@editorjs/quote': 
+'^2.7.6',
+          
+'@editorjs/table': 
+'^2.4.5',
+          
+'@emotion/cache': 
+'^11.13.1',
+          
+'@emotion/react': 
+'^11.13.3',
+          
+'@emotion/styled': 
+'^11.13.0',
+          
+'@faker-js/faker': 
+'^9.1.0',
+          '@firebase/app': 
+'^0.10.15',
+          
+'@firebase/auth': '^1.8.0',
+          
+'@firebase/firestore': 
+'^4.7.4',
+          '@formatjs/intl-p
+luralrules': '^5.3.4',
+          '@formatjs/intl-r
+elativetimeformat': 
+'^11.4.4',
+          
+'@fullcalendar/core': 
+'^6.1.18',
+          
+'@fullcalendar/daygrid': 
+'^6.1.18',
+          '@fullcalendar/in
+teraction': '^6.1.18',
+          
+'@fullcalendar/list': 
+'^6.1.18',
+          '@fullcalendar/mu
+ltimonth': '^6.1.18',
+          
+'@fullcalendar/react': 
+'^6.1.18',
+[36mvite v6.4.1 [32mbuilding for production...[36m[39m
+          '@fullcalendar/re
+source-timeline': 
+'^6.1.18',
+          
+'@fullcalendar/timegrid': 
+'^6.1.18',
+          
+'@fullcalendar/timeline': 
+'^6.1.18',
+          
+'@hookform/resolvers': 
+'^5.0.1',
+          '@mui/base': 
+'5.0.0-beta.40',
+          '@mui/material': 
+'^6.1.6',
+          '@mui/utils': 
+'^6.1.6',
+          
+'@mui/x-date-pickers': 
+'^8.3.1',
+          
+'@phosphor-icons/react': 
+'^2.1.7',
+          '@radix-ui/react-
+accordion': '^1.2.10',
+          '@radix-ui/react-
+alert-dialog': '^1.1.15',
+          
+'@radix-ui/react-avatar': 
+'^1.1.9',
+          '@radix-ui/react-
+checkbox': '^1.3.3',
+          '@radix-ui/react-
+collapsible': '^1.1.1',
+          
+'@radix-ui/react-dialog': 
+'^1.1.15',
+          '@radix-ui/react-
+direction': '^1.1.1',
+          '@radix-ui/react-
+dropdown-menu': '^2.1.16',
+          
+'@radix-ui/react-icons': 
+'^1.3.2',
+          
+'@radix-ui/react-label': 
+'^2.1.7',
+          '@radix-ui/react-
+navigation-menu': 
+'^1.2.10',
+          
+'@radix-ui/react-popover': 
+'^1.1.11',
+          '@radix-ui/react-
+progress': '^1.1.8',
+          '@radix-ui/react-
+scroll-area': '^1.2.10',
+          
+'@radix-ui/react-select': 
+'^2.2.6',
+          '@radix-ui/react-
+separator': '^1.1.8',
+          
+'@radix-ui/react-slider': 
+'^1.2.1',
+          
+'@radix-ui/react-slot': 
+'^1.2.4',
+          
+'@radix-ui/react-switch': 
+'^1.2.4',
+          
+'@radix-ui/react-tabs': 
+'^1.1.9',
+          
+'@radix-ui/react-tooltip': 
+'^1.2.8',
+          '@tanstack/query-
+sync-storage-persister': 
+'^5.80.6',
+          
+'@tanstack/react-query': 
+'^5.59.20',
+          '@tanstack/react-
+query-persist-client': 
+'^5.80.6',
+          
+'@tanstack/react-table': 
+'^8.21.3',
+          apexcharts: 
+'3.52.0',
+          axios: '^1.7.7',
+          'change-case': 
+'^5.4.4',
+          ckeditor5: 
+'^46.1.1',
+          'class-variance-a
+uthority': '^0.7.1',
+          clsx: '^2.1.1',
+          cmdk: '^1.1.1',
+          concurrently: 
+'^9.2.0',
+          'date-fns': 
+'^3.6.0',
+          dayjs: 
+'^1.11.13',
+          docx: '^9.6.0',
+          dompurify: 
+'^3.2.6',
+          dotenv: 
+'^16.4.7',
+          express: 
+'^5.1.0',
+          'file-saver': 
+'^2.0.5',
+          formik: '^2.4.6',
+          'highlight.js': 
+'^11.11.1',
+          jotai: '^2.15.1',
+          jspdf: '^4.2.0',
+          
+'jspdf-autotable': 
+'^5.0.7',
+          'jwt-decode': 
+'^4.0.0',
+          leaflet: 
+'^1.9.4',
+          
+'lodash.debounce': 
+'^4.0.8',
+          
+'lodash.orderby': '^4.6.0',
+          'lucide-react': 
+'^0.503.0',
+          mammoth: 
+'^1.10.0',
+          
+'mini-svg-data-uri': 
+'^1.4.4',
+          moment: 
+'^2.30.1',
+          'next-themes': 
+'^0.4.6',
+          notistack: 
+'^3.0.1',
+          
+'postcss-preset-env': 
+'^10.1.0',
+          'prop-types': 
+'^15.8.1',
+          qs: '^6.13.0',
+          quill: '^2.0.3',
+          
+'quill-table-ui': '^1.0.7',
+          'radix-ui': 
+'^1.4.3',
+          react: '^18.3.1',
+          
+'react-apexcharts': 
+'1.4.1',
+          'react-color': 
+'^2.19.3',
+          
+'react-day-picker': 
+'^9.11.1',
+          'react-dom': 
+'^18.3.1',
+          
+'react-dropzone': 
+'^14.3.8',
+          
+'react-flatpickr': 
+'^4.0.1',
+          'react-helmet': 
+'^6.1.0',
+          
+'react-helmet-async': 
+'^2.0.5',
+          
+'react-hook-form': 
+'^7.66.0',
+          'react-imask': 
+'^7.6.1',
+          
+'react-inlinesvg': 
+'^4.1.4',
+          'react-intl': 
+'^6.8.7',
+          'react-leaflet': 
+'^4.2.1',
+          'react-query': 
+'^3.39.3',
+          
+'react-quill-new': 
+'^3.4.6',
+          'react-router': 
+'^6.28.0',
+          
+'react-router-dom': 
+'^7.5.2',
+          'react-select': 
+'^5.10.1',
+          
+'react-signature-canvas': 
+'^1.1.0-alpha.2',
+          'react-topbar-pro
+gress-indicator': '^4.1.1',
+          'react-webcam': 
+'^7.2.0',
+          signature_pad: 
+'^5.0.7',
+          
+'socket.io-client': 
+'^4.8.1',
+          sonner: '^1.7.4',
+          
+'styled-components': 
+'^6.1.13',
+          stylis: '^4.3.4',
+          
+'stylis-plugin-rtl': 
+'^2.1.1',
+          sweetalert2: 
+'^11.17.2',
+          
+'tailwind-merge': '^3.4.0',
+          
+'tailwindcss-animate': 
+'^1.0.7',
+          
+'tw-animate-css': '^1.2.8',
+          
+'vite-plugin-windicss': 
+'^1.9.3',
+          'web-vitals': 
+'^5.0.2',
+          'workbox-core': 
+'^7.3.0',
+          
+'workbox-expiration': 
+'^7.3.0',
+          
+'workbox-precaching': 
+'^7.3.0',
+          
+'workbox-routing': 
+'^7.3.0',
+          
+'workbox-strategies': 
+'^7.3.0',
+          
+'workbox-window': '^7.3.0',
+          yup: '^1.4.0',
+          zustand: '^5.0.3'
+        },
+        devDependencies: {
+          '@eslint/js': 
+'^9.22.0',
+          
+'@tailwindcss/line-clamp': 
+'^0.4.4',
+          
+'@tailwindcss/typography': 
+'^0.5.16',
+          '@types/node': 
+'^24.7.2',
+          '@types/react': 
+'^18.3.20',
+          
+'@types/react-dom': 
+'^18.0.8',
+          
+'@vitejs/plugin-react': 
+'^4.3.4',
+          autoprefixer: 
+'^10.4.21',
+          eslint: 
+'^9.22.0',
+          'eslint-plugin-re
+act-hooks': '^5.2.0',
+          'eslint-plugin-re
+act-refresh': '^0.4.19',
+          globals: 
+'^16.0.0',
+          postcss: 
+'^8.5.3',
+          vite: '^6.3.1',
+          
+'vite-plugin-pwa': '^1.0.0'
+        }
+      },
+      hasSideEffects: 
+[Function: hasSideEffects],
+      setResolvedCache: 
+[Function: 
+setResolvedCache],
+      getResolvedCache: 
+[Function: 
+getResolvedCache]
+    },
+    set: [Function 
+(anonymous)]
+  },
+  worker: { format: 
+'iife', plugins: '() => 
+plugins', rollupOptions: 
+{} },
+  appType: 'spa',
+  experimental: { importGlo
+bRestoreExtension: false, 
+hmrPartialAccept: false },
+  future: undefined,
+  dev: {
+    warmup: [],
+    sourcemap: { js: true 
+},
+    sourcemapIgnoreList: 
+[Function: 
+isInNodeModules$1],
+    preTransformRequests: 
+false,
+    createEnvironment: 
+[Function: defaultCreateDev
+Environment],
+    recoverable: false,
+    moduleRunnerTransform: 
+false
+  },
+  webSocketToken: 
+'tyA5yUVNQ137',
+  getSortedPlugins: 
+[Function: 
+getSortedPlugins],
+  getSortedPluginHooks: 
+[Function: 
+getSortedPluginHooks],
+  createResolver: 
+[Function: createResolver],
+  fsDenyGlob: [Function: 
+arrayMatcher],
+  safeModulePaths: Set(0) 
+{},
+  additionalAllowedHosts: 
+[],
+  [Symbol(vite:resolved-con
+fig)]: true
+}
+Browserslist: browsers 
+data (caniuse-lite) is 7 
+months old. Please run:
+  npx update-browserslist-d
+b@latest
+  Why you should do it 
+regularly: https://github.c
+om/browserslist/update-db#r
+eadme
+transforming...
+2026-03-12T03:39:28.690Z 
+vite:resolve 
+[32m2.89ms[39m 
+[36mtailwindcss/base[39m 
+-> [2mD:/CoreAdminSys/cas.
+adminportal.web.client/node
+_modules/tailwindcss/base.c
+ss[22m
+2026-03-12T03:39:28.756Z 
+vite:resolve 
+[32m1.98ms[39m [36mtailw
+indcss/components[39m -> 
+[2mD:/CoreAdminSys/cas.admi
+nportal.web.client/node_mod
+ules/tailwindcss/components
+.css[22m
+2026-03-12T03:39:28.777Z 
+vite:resolve 
+[32m2.11ms[39m [36mtailw
+indcss/utilities[39m -> [
+2mD:/CoreAdminSys/cas.admin
+portal.web.client/node_modu
+les/tailwindcss/utilities.c
+ss[22m
+2026-03-12T03:39:28.810Z 
+vite:resolve 
+[32m2.14ms[39m 
+[36mtw-animate-css[39m 
+-> [2mD:/CoreAdminSys/cas.
+adminportal.web.client/node
+_modules/tw-animate-css/dis
+t/tw-animate.css[22m
+2026-03-12T03:39:28.832Z 
+vite:resolve 
+[32m0.73ms[39m 
+[36mshadcn.ui[39m -> [2m
+D:/CoreAdminSys/cas.adminpo
+rtal.web.client/src/shared/
+styles/shadcn.ui.css[22m
+2026-03-12T03:39:28.859Z 
+vite:resolve 
+[32m0.88ms[39m 
+[36m./sidebar.css[39m -> 
+[2mD:/CoreAdminSys/cas.adm
+inportal.web.client/src/sha
+red/styles/sidebar.css[22m
+[32mΓ£ô[39m 443 modules transformed.
+
+PWA v1.0.3
+Building src/service-worker.js service worker ("es" format)...
+2026-03-12T03:39:40.096Z 
+vite:env loading env 
+files: [
+  'D:/CoreAdminSys/cas.admi
+nportal.web.client/.env',
+  'D:/CoreAdminSys/cas.admi
+nportal.web.client/.env.loc
+al',
+  'D:/CoreAdminSys/cas.admi
+nportal.web.client/.env.pro
+duction',
+  'D:/CoreAdminSys/cas.admi
+nportal.web.client/.env.pro
+duction.local'
+]
+2026-03-12T03:39:40.096Z 
+vite:env env files loaded 
+in 0.53ms
+2026-03-12T03:39:40.098Z 
+vite:env using resolved 
+env: {}
+2026-03-12T03:39:40.105Z 
+vite:config using resolved 
+config: {
+  root: 'D:/CoreAdminSys/ca
+s.adminportal.web.client',
+  base: 
+'/cas/adminportal/',
+  resolve: {
+    externalConditions: [ 
+'node' ],
+    extensions: [
+      '.mjs',  '.js',
+      '.mts',  '.ts',
+      '.jsx',  '.tsx',
+      '.json'
+    ],
+    dedupe: [ 'react', 
+'react-dom' ],
+    noExternal: [],
+    external: [],
+    preserveSymlinks: 
+false,
+    alias: [
+      {
+        find: '@',
+        replacement: 'D:\\C
+oreAdminSys\\cas.adminporta
+l.web.client\\src'
+      },
+      {
+        find: '@app',
+        replacement: 'D:\\C
+oreAdminSys\\cas.adminporta
+l.web.client\\src\\app'
+      },
+      {
+        find: '@features',
+        replacement: 'D:\\C
+oreAdminSys\\cas.adminporta
+l.web.client\\src\\features
+'
+      },
+      {
+        find: '@shared',
+        replacement: 'D:\\C
+oreAdminSys\\cas.adminporta
+l.web.client\\src\\shared'
+      },
+      {
+        find: '@assets',
+        replacement: 'D:\\C
+oreAdminSys\\cas.adminporta
+l.web.client\\src\\assets'
+      },
+      {
+        find: 
+/^\/?@vite\/env/,
+        replacement: '/@fs/
+D:/CoreAdminSys/cas.adminpo
+rtal.web.client/node_module
+s/vite/dist/client/env.mjs'
+      },
+      {
+        find: 
+/^\/?@vite\/client/,
+        replacement: '/@fs/
+D:/CoreAdminSys/cas.adminpo
+rtal.web.client/node_module
+s/vite/dist/client/client.m
+js'
+      },
+      {
+        find: 
+/^\/?@vite\/env/,
+        replacement: '/@fs/
+D:/CoreAdminSys/cas.adminpo
+rtal.web.client/node_module
+s/vite/dist/client/env.mjs'
+      },
+      {
+        find: 
+/^\/?@vite\/client/,
+        replacement: '/@fs/
+D:/CoreAdminSys/cas.adminpo
+rtal.web.client/node_module
+s/vite/dist/client/client.m
+js'
+      }
+    ],
+    mainFields: [ 
+'browser', 'module', 
+'jsnext:main', 'jsnext' ],
+    conditions: [ 
+'module', 'browser', 
+'development|production' ],
+    builtins: []
+  },
+  mode: 'production',
+  envDir: 'D:/CoreAdminSys/
+cas.adminportal.web.client'
+,
+  envPrefix: undefined,
+  publicDir: '',
+  build: {
+    target: [ 'es2020', 
+'edge88', 'firefox78', 
+'chrome87', 'safari14' ],
+    polyfillModulePreload: 
+true,
+    modulePreload: false,
+    outDir: 'dist',
+    assetsDir: 'assets',
+    assetsInlineLimit: 
+4096,
+    sourcemap: false,
+    terserOptions: {},
+    rollupOptions: {
+      input: 'D:\\CoreAdmin
+Sys\\cas.adminportal.web.cl
+ient\\src\\service-worker.j
+s',
+      output: {
+        entryFileNames: 
+'service-worker.mjs',
+        
+inlineDynamicImports: true
+      }
+    },
+    commonjsOptions: { 
+include: [ /node_modules/ 
+], extensions: [ '.js', 
+'.cjs' ] },
+    
+dynamicImportVarsOptions: 
+{ warnOnError: true, 
+exclude: [ /node_modules/ 
+] },
+    write: true,
+    emptyOutDir: false,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssrManifest: false,
+    ssrEmitAssets: false,
+    reportCompressedSize: 
+true,
+    chunkSizeWarningLimit: 
+500,
+    watch: null,
+    cssCodeSplit: true,
+    minify: 'esbuild',
+    ssr: false,
+    emitAssets: true,
+    createEnvironment: 
+[Function: 
+createEnvironment],
+    cssTarget: [ 'es2020', 
+'edge88', 'firefox78', 
+'chrome87', 'safari14' ],
+    cssMinify: true
+  },
+  configFile: undefined,
+  define: { 
+'process.env.NODE_ENV': 
+'"production"' },
+  plugins: [
+    'vite:build-metadata',
+    
+'vite:watch-package-data',
+    'alias',
+    'vite:resolve',
+    
+'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    'vite:wasm-fallback',
+    'vite:define',
+    'vite:css-post',
+    'vite:build-html',
+    'vite:worker-import-met
+a-url',
+    'vite:asset-import-meta
+-url',
+    'vite:force-systemjs-wr
+ap-complete',
+    'commonjs',
+    'vite:data-uri',
+    'vite:rollup-options-pl
+ugins',
+    
+'vite:dynamic-import-vars',
+    'vite:import-glob',
+    'vite:build-import-anal
+ysis',
+    
+'vite:esbuild-transpile',
+    'vite:terser',
+    'vite:manifest',
+    'vite:ssr-manifest',
+    'vite:reporter',
+    'vite:load-fallback'
+  ],
+  environments: {
+    client: {
+      define: { 
+'process.env.NODE_ENV': 
+'"production"' },
+      resolve: {
+        
+externalConditions: [ 
+'node' ],
+        extensions: [
+          '.mjs',  '.js',
+          '.mts',  '.ts',
+          '.jsx',  '.tsx',
+          '.json'
+        ],
+        dedupe: [ 'react', 
+'react-dom' ],
+        noExternal: [],
+        external: [],
+        preserveSymlinks: 
+false,
+        alias: [
+          {
+            find: '@',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src'
+          },
+          {
+            find: '@app',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\app'
+          },
+          {
+            find: 
+'@features',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\feat
+ures'
+          },
+          {
+            find: 
+'@shared',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\shar
+ed'
+          },
+          {
+            find: 
+'@assets',
+            replacement: 'D
+:\\CoreAdminSys\\cas.adminp
+ortal.web.client\\src\\asse
+ts'
+          },
+          {
+            find: 
+/^\/?@vite\/env/,
+            replacement: '/
+@fs/D:/CoreAdminSys/cas.adm
+inportal.web.client/node_mo
+dules/vite/dist/client/env.
+mjs'
+          },
+          {
+            find: 
+/^\/?@vite\/client/,
+            replacement: '/
+@fs/D:/CoreAdminSys/cas.adm
+inportal.web.client/node_mo
+dules/vite/dist/client/clie
+nt.mjs'
+          },
+          {
+            find: 
+/^\/?@vite\/env/,
+            replacement: '/
+@fs/D:/CoreAdminSys/cas.adm
+inportal.web.client/node_mo
+dules/vite/dist/client/env.
+mjs'
+          },
+          {
+            find: 
+/^\/?@vite\/client/,
+            replacement: '/
+@fs/D:/CoreAdminSys/cas.adm
+inportal.web.client/node_mo
+dules/vite/dist/client/clie
+nt.mjs'
+          }
+        ],
+        mainFields: [ 
+'browser', 'module', 
+'jsnext:main', 'jsnext' ],
+        conditions: [ 
+'module', 'browser', 
+'development|production' ],
+        builtins: []
+      },
+      keepProcessEnv: 
+false,
+      consumer: 'client',
+      optimizeDeps: {
+        include: [],
+        exclude: [],
+        needsInterop: [],
+        extensions: [],
+        disabled: 
+undefined,
+        holdUntilCrawlEnd: 
+true,
+        force: false,
+        noDiscovery: false,
+        esbuildOptions: { 
+preserveSymlinks: false }
+      },
+      dev: {
+        warmup: [],
+        sourcemap: { js: 
+true },
+        
+sourcemapIgnoreList: 
+[Function: 
+isInNodeModules$1],
+        
+preTransformRequests: true,
+        createEnvironment: 
+[Function: defaultCreateCli
+entDevEnvironment],
+        recoverable: true,
+        
+moduleRunnerTransform: 
+false
+      },
+      build: {
+        target: [ 
+'es2020', 'edge88', 
+'firefox78', 'chrome87', 
+'safari14' ],
+        
+polyfillModulePreload: 
+true,
+        modulePreload: 
+false,
+        outDir: 'dist',
+        assetsDir: 
+'assets',
+        assetsInlineLimit: 
+4096,
+        sourcemap: false,
+        terserOptions: {},
+        rollupOptions: {
+          input: 'D:\\CoreA
+dminSys\\cas.adminportal.we
+b.client\\src\\service-work
+er.js',
+          output: {
+            
+entryFileNames: 
+'service-worker.mjs',
+            
+inlineDynamicImports: true
+          }
+        },
+        commonjsOptions: { 
+include: [ /node_modules/ 
+], extensions: [ '.js', 
+'.cjs' ] },
+        
+dynamicImportVarsOptions: 
+{ warnOnError: true, 
+exclude: [ /node_modules/ 
+] },
+        write: true,
+        emptyOutDir: false,
+        copyPublicDir: 
+true,
+        manifest: false,
+        lib: false,
+        ssrManifest: false,
+        ssrEmitAssets: 
+false,
+        
+reportCompressedSize: true,
+        
+chunkSizeWarningLimit: 500,
+        watch: null,
+        cssCodeSplit: true,
+        minify: 'esbuild',
+        ssr: false,
+        emitAssets: true,
+        createEnvironment: 
+[Function: 
+createEnvironment],
+        cssTarget: [ 
+'es2020', 'edge88', 
+'firefox78', 'chrome87', 
+'safari14' ],
+        cssMinify: true
+      }
+    }
+  },
+  configFileDependencies: 
+[],
+  inlineConfig: {
+    root: 'D:/CoreAdminSys/
+cas.adminportal.web.client'
+,
+    base: 
+'/cas/adminportal/',
+    resolve: {
+      externalConditions: 
+[ 'node' ],
+      extensions: [
+        '.mjs',  '.js',
+        '.mts',  '.ts',
+        '.jsx',  '.tsx',
+        '.json'
+      ],
+      dedupe: [ 'react', 
+'react-dom' ],
+      noExternal: [],
+      external: [],
+      preserveSymlinks: 
+false,
+      alias: [
+        {
+          find: '@',
+          replacement: 'D:\
+\CoreAdminSys\\cas.adminpor
+tal.web.client\\src'
+        },
+        {
+          find: '@app',
+          replacement: 'D:\
+\CoreAdminSys\\cas.adminpor
+tal.web.client\\src\\app'
+        },
+        {
+          find: 
+'@features',
+          replacement: 'D:\
+\CoreAdminSys\\cas.adminpor
+tal.web.client\\src\\featur
+es'
+        },
+        {
+          find: '@shared',
+          replacement: 'D:\
+\CoreAdminSys\\cas.adminpor
+tal.web.client\\src\\shared
+'
+        },
+        {
+          find: '@assets',
+          replacement: 'D:\
+\CoreAdminSys\\cas.adminpor
+tal.web.client\\src\\assets
+'
+        },
+        {
+          find: 
+/^\/?@vite\/env/,
+          replacement: '/@f
+s/D:/CoreAdminSys/cas.admin
+portal.web.client/node_modu
+les/vite/dist/client/env.mj
+s'
+        },
+        {
+          find: 
+/^\/?@vite\/client/,
+          replacement: '/@f
+s/D:/CoreAdminSys/cas.admin
+portal.web.client/node_modu
+les/vite/dist/client/client
+.mjs'
+        }
+      ],
+      mainFields: [ 
+'browser', 'module', 
+'jsnext:main', 'jsnext' ],
+      conditions: [ 
+'module', 'browser', 
+'development|production' ],
+      builtins: []
+    },
+    mode: 'production',
+    envDir: 'D:/CoreAdminSy
+s/cas.adminportal.web.clien
+t',
+    envPrefix: undefined,
+    publicDir: false,
+    build: {
+      target: [ 'es2020', 
+'edge88', 'firefox78', 
+'chrome87', 'safari14' ],
+      minify: 'esbuild',
+      sourcemap: false,
+      outDir: 'dist',
+      emptyOutDir: false,
+      modulePreload: false,
+      rollupOptions: {
+        plugins: undefined,
+        input: 'D:\\CoreAdm
+inSys\\cas.adminportal.web.
+client\\src\\service-worker
+.js',
+        output: {
+          entryFileNames: 
+'service-worker.mjs',
+          
+inlineDynamicImports: true
+        }
+      }
+    },
+    configFile: false,
+    define: { 
+'process.env.NODE_ENV': 
+'"production"' },
+    plugins: undefined,
+    environments: {
+      client: {
+        define: { 
+'process.env.NODE_ENV': 
+'"production"' },
+        resolve: {
+          
+externalConditions: [ 
+'node' ],
+          extensions: [
+            '.mjs',  '.js',
+            '.mts',  '.ts',
+            '.jsx',  
+'.tsx',
+            '.json'
+          ],
+          dedupe: [ 
+'react', 'react-dom' ],
+          noExternal: [],
+          external: [],
+          
+preserveSymlinks: false,
+          alias: [
+            {
+              find: '@',
+              replacement: 
+'D:\\CoreAdminSys\\cas.admi
+nportal.web.client\\src'
+            },
+            {
+              find: '@app',
+              replacement: 
+'D:\\CoreAdminSys\\cas.admi
+nportal.web.client\\src\\ap
+p'
+            },
+            {
+              find: 
+'@features',
+              replacement: 
+'D:\\CoreAdminSys\\cas.admi
+nportal.web.client\\src\\fe
+atures'
+            },
+            {
+              find: 
+'@shared',
+              replacement: 
+'D:\\CoreAdminSys\\cas.admi
+nportal.web.client\\src\\sh
+ared'
+            },
+            {
+              find: 
+'@assets',
+              replacement: 
+'D:\\CoreAdminSys\\cas.admi
+nportal.web.client\\src\\as
+sets'
+            },
+            {
+              find: 
+/^\/?@vite\/env/,
+              replacement: 
+'/@fs/D:/CoreAdminSys/cas.a
+dminportal.web.client/node_
+modules/vite/dist/client/en
+v.mjs'
+            },
+            {
+              find: 
+/^\/?@vite\/client/,
+              replacement: 
+'/@fs/D:/CoreAdminSys/cas.a
+dminportal.web.client/node_
+modules/vite/dist/client/cl
+ient.mjs'
+            }
+          ],
+          mainFields: [ 
+'browser', 'module', 
+'jsnext:main', 'jsnext' ],
+          conditions: [ 
+'module', 'browser', 
+'development|production' ],
+          builtins: []
+        },
+        dev: {},
+        build: {
+          target: [ 
+'es2020', 'edge88', 
+'firefox78', 'chrome87', 
+'safari14' ],
+          minify: 
+'esbuild',
+          sourcemap: false,
+          outDir: 'dist',
+          emptyOutDir: 
+false,
+          modulePreload: 
+false,
+          rollupOptions: {
+            plugins: 
+undefined,
+            input: 'D:\\Cor
+eAdminSys\\cas.adminportal.
+web.client\\src\\service-wo
+rker.js',
+            output: {
+              
+entryFileNames: 
+'service-worker.mjs',
+              
+inlineDynamicImports: true
+            }
+          }
+        },
+        optimizeDeps: 
+undefined
+      }
+    }
+  },
+  decodedBase: 
+'/cas/adminportal/',
+  rawBase: 
+'/cas/adminportal/',
+  cacheDir: 'D:/CoreAdminSy
+s/cas.adminportal.web.clien
+t/node_modules/.vite',
+  command: 'build',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: true,
+  css: {
+    transformer: 'postcss',
+    
+preprocessorMaxWorkers: 0,
+    devSourcemap: false
+  },
+  json: { namedExports: 
+true, stringify: 'auto' },
+  esbuild: { jsxDev: false 
+},
+  server: {
+    port: 5173,
+    strictPort: false,
+    host: undefined,
+    allowedHosts: [],
+    https: undefined,
+    open: false,
+    proxy: undefined,
+    cors: {
+      origin: /^https?:\/\/
+(?:(?:[^:]+\.)?localhost|12
+7\.0\.0\.1|\[::1\])(?::\d+)
+?$/
+    },
+    headers: {},
+    warmup: { clientFiles: 
+[], ssrFiles: [] },
+    middlewareMode: false,
+    fs: {
+      strict: true,
+      deny: [ '.env', 
+'.env.*', '*.{crt,pem}', 
+'**/.git/**' ],
+      allow: [ 'D:/CoreAdmi
+nSys/cas.adminportal.web.cl
+ient' ]
+    },
+    preTransformRequests: 
+true,
+    perEnvironmentStartEndD
+uringDev: false,
+    sourcemapIgnoreList: 
+[Function: 
+isInNodeModules$1]
+  },
+  builder: undefined,
+  preview: {
+    port: 4173,
+    strictPort: false,
+    host: undefined,
+    allowedHosts: [],
+    https: undefined,
+    open: false,
+    proxy: undefined,
+    cors: {
+      origin: /^https?:\/\/
+(?:(?:[^:]+\.)?localhost|12
+7\.0\.0\.1|\[::1\])(?::\d+)
+?$/
+    },
+    headers: {}
+  },
+  env: {
+    BASE_URL: 
+'/cas/adminportal/',
+    MODE: 'production',
+    DEV: false,
+    PROD: true
+  },
+  assetsInclude: 
+[Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: 
+warnOnce],
+    error: [Function: 
+error],
+    clearScreen: 
+[Function: clearScreen],
+    hasErrorLogged: 
+[Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_D:/CoreAdminSys/c
+as.adminportal.web.client' 
+=> {
+      dir: 'D:/CoreAdminSys
+/cas.adminportal.web.client
+',
+      data: {
+        name: 
+'core-hrsolution-ui',
+        private: true,
+        version: '0.0.0',
+        type: 'module',
+        scripts: {
+          start: 
+'concurrently "npm run 
+start-dev" "npm run 
+start-server"',
+          'start-dev': 
+'vite --host --port 5173',
+          'start-server': 
+'cd socket && npm start',
+          'create:module': 
+'node scripts/generate-modu
+le.js',
+          'delete:module': 
+'node 
+scripts/remove-module.js',
+          build: 'vite 
+build ',
+          lint: 'eslint .',
+          preview: 
+'concurrently "npm run 
+preview-locally" "npm run 
+start-server"',
+          
+'preview-locally': 'vite 
+preview --port 5173'
+        },
+        dependencies: {
+          
+'@auth0/auth0-spa-js': 
+'^2.1.3',
+          '@base-ui-compone
+nts/react': 
+'^1.0.0-beta.4',
+          '@ckeditor/ckedit
+or5-react': '^9.5.0',
+          '@dnd-kit/core': 
+'^6.3.1',
+          
+'@dnd-kit/modifiers': 
+'^9.0.0',
+          
+'@dnd-kit/sortable': 
+'^10.0.0',
+          
+'@dnd-kit/utilities': 
+'^3.2.2',
+          
+'@editorjs/attaches': 
+'^1.3.0',
+          
+'@editorjs/checklist': 
+'^1.6.0',
+          
+'@editorjs/code': '^2.9.3',
+          
+'@editorjs/delimiter': 
+'^1.4.2',
+          
+'@editorjs/editorjs': 
+'^2.30.8',
+          
+'@editorjs/embed': 
+'^2.7.6',
+          
+'@editorjs/header': 
+'^2.8.8',
+          
+'@editorjs/image': 
+'^2.10.3',
+          
+'@editorjs/inline-code': 
+'^1.5.2',
+          
+'@editorjs/link': '^2.6.2',
+          
+'@editorjs/list': '^2.0.8',
+          
+'@editorjs/paragraph': 
+'^2.11.7',
+          
+'@editorjs/quote': 
+'^2.7.6',
+          
+'@editorjs/table': 
+'^2.4.5',
+          
+'@emotion/cache': 
+'^11.13.1',
+          
+'@emotion/react': 
+'^11.13.3',
+          
+'@emotion/styled': 
+'^11.13.0',
+          
+'@faker-js/faker': 
+'^9.1.0',
+          '@firebase/app': 
+'^0.10.15',
+          
+'@firebase/auth': '^1.8.0',
+          
+'@firebase/firestore': 
+'^4.7.4',
+          '@formatjs/intl-p
+luralrules': '^5.3.4',
+          '@formatjs/intl-r
+elativetimeformat': 
+'^11.4.4',
+          
+'@fullcalendar/core': 
+'^6.1.18',
+          
+'@fullcalendar/daygrid': 
+'^6.1.18',
+          '@fullcalendar/in
+teraction': '^6.1.18',
+          
+'@fullcalendar/list': 
+'^6.1.18',
+          '@fullcalendar/mu
+ltimonth': '^6.1.18',
+          
+'@fullcalendar/react': 
+'^6.1.18',
+          '@fullcalendar/re
+source-timeline': 
+'^6.1.18',
+          
+'@fullcalendar/timegrid': 
+'^6.1.18',
+          
+'@fullcalendar/timeline': 
+'^6.1.18',
+          
+'@hookform/resolvers': 
+'^5.0.1',
+          '@mui/base': 
+'5.0.0-beta.40',
+          '@mui/material': 
+'^6.1.6',
+          '@mui/utils': 
+'^6.1.6',
+          
+'@mui/x-date-pickers': 
+'^8.3.1',
+          
+'@phosphor-icons/react': 
+'^2.1.7',
+          '@radix-ui/react-
+accordion': '^1.2.10',
+          '@radix-ui/react-
+alert-dialog': '^1.1.15',
+          
+'@radix-ui/react-avatar': 
+'^1.1.9',
+          '@radix-ui/react-
+checkbox': '^1.3.3',
+          '@radix-ui/react-
+collapsible': '^1.1.1',
+          
+'@radix-ui/react-dialog': 
+'^1.1.15',
+          '@radix-ui/react-
+direction': '^1.1.1',
+          '@radix-ui/react-
+dropdown-menu': '^2.1.16',
+          
+'@radix-ui/react-icons': 
+'^1.3.2',
+          
+'@radix-ui/react-label': 
+'^2.1.7',
+          '@radix-ui/react-
+navigation-menu': 
+'^1.2.10',
+          
+'@radix-ui/react-popover': 
+'^1.1.11',
+          '@radix-ui/react-
+progress': '^1.1.8',
+          '@radix-ui/react-
+scroll-area': '^1.2.10',
+          
+'@radix-ui/react-select': 
+'^2.2.6',
+          '@radix-ui/react-
+separator': '^1.1.8',
+          
+'@radix-ui/react-slider': 
+'^1.2.1',
+          
+'@radix-ui/react-slot': 
+'^1.2.4',
+          
+'@radix-ui/react-switch': 
+'^1.2.4',
+          
+'@radix-ui/react-tabs': 
+'^1.1.9',
+          
+'@radix-ui/react-tooltip': 
+'^1.2.8',
+          '@tanstack/query-
+sync-storage-persister': 
+'^5.80.6',
+          
+'@tanstack/react-query': 
+'^5.59.20',
+          '@tanstack/react-
+query-persist-client': 
+'^5.80.6',
+          
+'@tanstack/react-table': 
+'^8.21.3',
+          apexcharts: 
+'3.52.0',
+          axios: '^1.7.7',
+          'change-case': 
+'^5.4.4',
+          ckeditor5: 
+'^46.1.1',
+          'class-variance-a
+uthority': '^0.7.1',
+          clsx: '^2.1.1',
+          cmdk: '^1.1.1',
+          concurrently: 
+'^9.2.0',
+          'date-fns': 
+'^3.6.0',
+          dayjs: 
+'^1.11.13',
+          docx: '^9.6.0',
+          dompurify: 
+'^3.2.6',
+          dotenv: 
+'^16.4.7',
+          express: 
+'^5.1.0',
+          'file-saver': 
+'^2.0.5',
+          formik: '^2.4.6',
+          'highlight.js': 
+'^11.11.1',
+          jotai: '^2.15.1',
+          jspdf: '^4.2.0',
+          
+'jspdf-autotable': 
+'^5.0.7',
+          'jwt-decode': 
+'^4.0.0',
+          leaflet: 
+'^1.9.4',
+          
+'lodash.debounce': 
+'^4.0.8',
+          
+'lodash.orderby': '^4.6.0',
+          'lucide-react': 
+'^0.503.0',
+          mammoth: 
+'^1.10.0',
+          
+'mini-svg-data-uri': 
+'^1.4.4',
+          moment: 
+'^2.30.1',
+          'next-themes': 
+'^0.4.6',
+          notistack: 
+'^3.0.1',
+          
+'postcss-preset-env': 
+'^10.1.0',
+          'prop-types': 
+'^15.8.1',
+          qs: '^6.13.0',
+          quill: '^2.0.3',
+          
+'quill-table-ui': '^1.0.7',
+          'radix-ui': 
+'^1.4.3',
+          react: '^18.3.1',
+          
+'react-apexcharts': 
+'1.4.1',
+          'react-color': 
+'^2.19.3',
+          
+'react-day-picker': 
+'^9.11.1',
+          'react-dom': 
+'^18.3.1',
+          
+'react-dropzone': 
+'^14.3.8',
+          
+'react-flatpickr': 
+'^4.0.1',
+          'react-helmet': 
+'^6.1.0',
+          
+'react-helmet-async': 
+'^2.0.5',
+          
+'react-hook-form': 
+'^7.66.0',
+          'react-imask': 
+'^7.6.1',
+          
+'react-inlinesvg': 
+'^4.1.4',
+          'react-intl': 
+'^6.8.7',
+          'react-leaflet': 
+'^4.2.1',
+          'react-query': 
+'^3.39.3',
+          
+'react-quill-new': 
+'^3.4.6',
+          'react-router': 
+'^6.28.0',
+          
+'react-router-dom': 
+'^7.5.2',
+          'react-select': 
+'^5.10.1',
+          
+'react-signature-canvas': 
+'^1.1.0-alpha.2',
+          'react-topbar-pro
+gress-indicator': '^4.1.1',
+          'react-webcam': 
+'^7.2.0',
+          signature_pad: 
+'^5.0.7',
+          
+'socket.io-client': 
+'^4.8.1',
+          sonner: '^1.7.4',
+          
+'styled-components': 
+'^6.1.13',
+          stylis: '^4.3.4',
+          
+'stylis-plugin-rtl': 
+'^2.1.1',
+          sweetalert2: 
+'^11.17.2',
+          
+'tailwind-merge': '^3.4.0',
+          
+'tailwindcss-animate': 
+'^1.0.7',
+          
+'tw-animate-css': '^1.2.8',
+          
+'vite-plugin-windicss': 
+'^1.9.3',
+          'web-vitals': 
+'^5.0.2',
+          'workbox-core': 
+'^7.3.0',
+          
+'workbox-expiration': 
+'^7.3.0',
+          
+'workbox-precaching': 
+'^7.3.0',
+          
+'workbox-routing': 
+'^7.3.0',
+          
+'workbox-strategies': 
+'^7.3.0',
+          
+'workbox-window': '^7.3.0',
+          yup: '^1.4.0',
+          zustand: '^5.0.3'
+        },
+        devDependencies: {
+          '@eslint/js': 
+'^9.22.0',
+          
+'@tailwindcss/line-clamp': 
+'^0.4.4',
+          
+'@tailwindcss/typography': 
+'^0.5.16',
+          '@types/node': 
+'^24.7.2',
+          '@types/react': 
+'^18.3.20',
+          
+'@types/react-dom': 
+'^18.0.8',
+          
+'@vitejs/plugin-react': 
+'^4.3.4',
+          autoprefixer: 
+'^10.4.21',
+          eslint: 
+'^9.22.0',
+          'eslint-plugin-re
+act-hooks': '^5.2.0',
+          'eslint-plugin-re
+act-refresh': '^0.4.19',
+          globals: 
+'^16.0.0',
+          postcss: 
+'^8.5.3',
+          vite: '^6.3.1',
+          
+'vite-plugin-pwa': '^1.0.0'
+        }
+      },
+      hasSideEffects: 
+[Function: hasSideEffects],
+      setResolvedCache: 
+[Function: 
+setResolvedCache],
+      getResolvedCache: 
+[Function: 
+getResolvedCache]
+    },
+    set: [Function 
+(anonymous)]
+  },
+  worker: { format: 
+'iife', plugins: '() => 
+plugins', rollupOptions: 
+{} },
+  appType: 'spa',
+  experimental: { importGlo
+bRestoreExtension: false, 
+hmrPartialAccept: false },
+  future: undefined,
+  ssr: {
+    target: 'node',
+    optimizeDeps: { 
+esbuildOptions: { 
+preserveSymlinks: false } 
+},
+    resolve: { conditions: 
+undefined, 
+externalConditions: 
+undefined }
+  },
+  optimizeDeps: {
+    include: [],
+    exclude: [],
+    needsInterop: [],
+    extensions: [],
+    disabled: undefined,
+    holdUntilCrawlEnd: 
+true,
+    force: false,
+    noDiscovery: false,
+    esbuildOptions: { 
+preserveSymlinks: false }
+  },
+  dev: {
+    warmup: [],
+    sourcemap: { js: true 
+},
+    sourcemapIgnoreList: 
+[Function: 
+isInNodeModules$1],
+    preTransformRequests: 
+false,
+    createEnvironment: 
+[Function: defaultCreateDev
+Environment],
+    recoverable: false,
+    moduleRunnerTransform: 
+false
+  },
+  webSocketToken: 
+'Pc-CDvobz2VV',
+  getSortedPlugins: 
+[Function: 
+getSortedPlugins],
+  getSortedPluginHooks: 
+[Function: 
+getSortedPluginHooks],
+  createResolver: 
+[Function: createResolver],
+  fsDenyGlob: [Function: 
+arrayMatcher],
+  safeModulePaths: Set(0) 
+{},
+  additionalAllowedHosts: 
+[],
+  [Symbol(vite:resolved-con
+fig)]: true
+}
+[36mvite v6.4.1 [32mbuilding for production...[36m[39m
+[32mΓ£ô[39m 0 modules transformed.
+[31mΓ£ù[39m Build failed 
+in 7.64s
+[31mΓ£ù[39m Build failed 
+in 23.27s
+[31merror during build:
+[31m[vite-plugin-pwa:build
+] [31mCould not resolve 
+entry module "src/service-w
+orker.js".[31m[31m
+[31mCould not resolve 
+entry module "src/service-w
+orker.js".[31m
+    at getRollupError (file
+:///D:/CoreAdminSys/cas.adm
+inportal.web.client/node_mo
+dules/rollup/dist/es/shared
+/parseAst.js:401:41)
+    at error (file:///D:/Co
+reAdminSys/cas.adminportal.
+web.client/node_modules/rol
+lup/dist/es/shared/parseAst
+.js:397:42)
+    at ModuleLoader.loadEnt
+ryModule (file:///D:/CoreAd
+minSys/cas.adminportal.web.
+client/node_modules/rollup/
+dist/es/shared/node-entry.j
+s:21555:20)
+    at async Promise.all 
+(index 0)[39m
