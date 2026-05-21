@@ -1,9 +1,0 @@
-global using global::CAS.FinancePortal.Web.Server.Core.Models.Entities.CurrentApplication.Tables;
-global using global::CAS.FinancePortal.Web.Server.Core.Models.Entities.CurrentApplication.Views;
-global using global::CAS.FinancePortal.Web.Server.Core.Models.Entities.SuperApplication.Tables;
-global using global::CAS.FinancePortal.Web.Server.Core.DbContext;
-global using global::CAS.FinancePortal.Web.Server.Core.Repositories;
-global using global::CAS.FinancePortal.Web.Server.Persistence.EntityConfigurations.CurrentApplication.Tables;
-global using global::CAS.FinancePortal.Web.Server.Persistence.EntityConfigurations.CurrentApplication.Views;
-global using global::CAS.FinancePortal.Web.Server.Persistence.EntityConfigurations.SuperApplication;
-global using Microsoft.EntityFrameworkCore;
