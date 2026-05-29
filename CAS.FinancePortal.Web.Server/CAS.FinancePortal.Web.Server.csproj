@@ -8,7 +8,7 @@
     <AssemblyName>CAS.FinancePortal.Web.Server</AssemblyName>
     <SpaRoot>..\cas.financeportal.web.client</SpaRoot>
     <SpaProxyLaunchCommand>npm run start-dev</SpaProxyLaunchCommand>
-    <SpaProxyServerUrl>https://localhost:5174</SpaProxyServerUrl>
+    <SpaProxyServerUrl>http://localhost:5173</SpaProxyServerUrl>
   </PropertyGroup>
 
   <ItemGroup>

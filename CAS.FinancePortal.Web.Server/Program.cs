@@ -38,6 +38,9 @@ builder.Services.AddScoped<IGlobalServices, GlobalServices>();
 
 builder.Services.AddScoped<ICurrentApplicationDbContext, CurrentApplicationDbContext>();
 builder.Services.AddScoped<ICurrentApplicationUnitOfWork, CurrentApplicationUnitOfWork>();
+builder.Services.AddScoped<IChecklistService, ChecklistService>();
+builder.Services.AddScoped<ISpeedTestService, SpeedTestService>();
+builder.Services.AddScoped<IMonitoringService, MonitoringService>();
 
 
 builder.Services.AddScoped<IEmailService, EmailService>();
@@ -74,7 +77,9 @@ builder.Services.AddControllers(options =>
 	options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
 	options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
 	options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
+	options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
 });
+
 
 builder.Services.AddAuthentication("Bearer")
 	.AddJwtBearer("Bearer", options =>
@@ -103,6 +108,7 @@ builder.Services.AddAuthentication("Bearer")
 
 
 
+// HANDOVER: CORS currently allows localhost only (Vite dev). Add production portal origin(s) for live.
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp", policy =>

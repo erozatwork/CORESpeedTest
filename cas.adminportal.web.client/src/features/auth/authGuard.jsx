@@ -25,8 +25,7 @@ export default function AuthGuard({ children }) {
     }
   }, [isAuthenticated, pathname, requestedLocation]);
 
-  // TEMPORARY BYPASS
-  const BYPASS_AUTH = true;
+  const BYPASS_AUTH = false;
 
   if (!isInitialized && !BYPASS_AUTH) {
     return <ScreenLoader />;

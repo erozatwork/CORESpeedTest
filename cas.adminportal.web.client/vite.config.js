@@ -67,6 +67,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 3000,
   },
   server: {
+    // HANDOVER: Dev-only proxy to local API. Production builds use VITE_API_URL, not this proxy.
     proxy: {
       '/api': {
         target: 'https://localhost:7002',

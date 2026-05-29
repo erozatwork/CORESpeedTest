@@ -80,8 +80,7 @@ export function AuthProvider({ children }) {
         ? localStorage.getItem("accessToken")
         : "";
 
-      // TEMPORARY BYPASS
-      const BYPASS_AUTH = true;
+      const BYPASS_AUTH = false;
 
       if (accessToken && isValidToken(accessToken)) {
         setSession(accessToken);
@@ -210,8 +209,6 @@ export function AuthProvider({ children }) {
       const isNetworkError = !error.response;
 
       if (isNetworkError) {
-        // TEMPORARY: Don't show network error in dev bypass mode
-        const BYPASS_AUTH = true;
         if (!BYPASS_AUTH) {
           toast.warning("You're Session has expired, please login again.");
         }

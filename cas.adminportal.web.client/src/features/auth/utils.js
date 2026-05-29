@@ -73,9 +73,15 @@ export const setUserSession = (user) => {
   }
 };
 
+//  temporary bypass
 export const GETSESSION = () => {
-  const token = "Bearer " + localStorage.getItem("accessToken");
-  return token;
+  const accessToken = localStorage.getItem("accessToken");
+
+  if (!accessToken) {
+    return null;
+  }
+
+  return `Bearer ${accessToken}`;
 };
 
 export const GETPERMISSION = () => {

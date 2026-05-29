@@ -1,11 +1,18 @@
 import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
 import relativeTime from 'dayjs/plugin/relativeTime';
+import utc from 'dayjs/plugin/utc';
+import timezone from 'dayjs/plugin/timezone';
 
 // ----------------------------------------------------------------------
 
 dayjs.extend(duration);
 dayjs.extend(relativeTime);
+dayjs.extend(utc);
+dayjs.extend(timezone);
+
+/** API/DB timestamps are stored as Philippines local wall clock (Asia/Manila, UTC+8). */
+export const PHILIPPINES_TIMEZONE = 'Asia/Manila';
 
 /**
  * Docs: https://day.js.org/docs/en/display/format
@@ -40,6 +47,26 @@ export function fDateTime(date, format) {
   const isValid = dayjs(date).isValid();
 
   return isValid ? dayjs(date).format(format ?? formatStr.dateTime) : 'Invalid time value';
+}
+
+/** Format a Philippines-local timestamp from the API (no extra timezone shift). */
+export function fPhilippinesDateTime(date, format = 'M-D-YYYY, h:mma') {
+  if (!date) {
+    return null;
+  }
+
+  const parsed = dayjs.tz(date, PHILIPPINES_TIMEZONE);
+  return parsed.isValid() ? parsed.format(format) : 'Invalid time value';
+}
+
+/** Date-only string (YYYY-MM-DD) in Philippines for filters. */
+export function fPhilippinesDateKey(date) {
+  if (!date) {
+    return '';
+  }
+
+  const parsed = dayjs.tz(date, PHILIPPINES_TIMEZONE);
+  return parsed.isValid() ? parsed.format('YYYY-MM-DD') : '';
 }
 
 // ----------------------------------------------------------------------

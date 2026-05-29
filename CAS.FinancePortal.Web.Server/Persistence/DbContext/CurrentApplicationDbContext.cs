@@ -3,7 +3,9 @@ using CAS.FinancePortal.Web.Server.Persistence.EntityConfigurations.CurrentAppli
 using CAS.FinancePortal.Web.Server.Persistence.EntityConfigurations.CurrentApplication.Views;
 using CAS.FinancePortal.Web.Server.Core.Models.Entities.CurrentApplication.Tables;
 using CAS.FinancePortal.Web.Server.Core.Models.Entities.CurrentApplication.Views;
+using CAS.FinancePortal.Web.Server.Core.Models.Entities;
 using Microsoft.EntityFrameworkCore;
+using CAS.FinancePortal.Web.Server.Persistence.EntityConfigurations.CurrentApplication.SpeedTest;
 
 namespace CAS.FinancePortal.Web.Server.Persistence.DbContext
 {
@@ -17,6 +19,9 @@ namespace CAS.FinancePortal.Web.Server.Persistence.DbContext
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Location> Locations { get; set; }
+        public DbSet<Checklist> Checklists { get; set; }
+        public DbSet<SpeedTestResult> SpeedTestResults { get; set; }
+        public DbSet<Monitoring> Monitorings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -28,6 +33,9 @@ namespace CAS.FinancePortal.Web.Server.Persistence.DbContext
             modelBuilder.ApplyConfiguration(new DepartmentConfig());
             modelBuilder.ApplyConfiguration(new EmployeeConfig());
             modelBuilder.ApplyConfiguration(new LocationConfig());
+            modelBuilder.ApplyConfiguration(new ChecklistConfig());
+            modelBuilder.ApplyConfiguration(new SpeedTestResultConfig());
+            modelBuilder.ApplyConfiguration(new MonitoringConfig());
 
             base.OnModelCreating(modelBuilder);
         }

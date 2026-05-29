@@ -1,3 +1,4 @@
+using CAS.FinancePortal.Web.Server.Core.Models.Entities.CurrentApplication.Tables;
 using CAS.FinancePortal.Web.Server.Core.Repositories;
 using CAS.FinancePortal.Web.Server.Core.UnitOfWork;
 using CAS.FinancePortal.Web.Server.Persistence.DbContext;
@@ -12,6 +13,8 @@ public sealed class CurrentApplicationUnitOfWork(CurrentApplicationDbContext db)
 	private bool _done;
 	public IDepartmentRepository DepartmentRepository { get; } = new DepartmentRepository(db);
 	public IEmployeeRepository EmployeeRepository { get; } = new EmployeeRepository(db);
+	public IChecklistRepository ChecklistRepository { get; } = new ChecklistRepository(db);
+	public IMonitoringRepository MonitoringRepository { get; } = new MonitoringRepository(db);
 
 	public async Task BeginTransactionAsync(CancellationToken ct = default)
 	{
